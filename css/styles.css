@@ -593,6 +593,9 @@ border: none;
 border-radius: 4px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 cursor: pointer;
+transition-property: background-color;
+transition-duration: 250m;
+-o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .email-form:hover,
@@ -716,7 +719,7 @@ padding: 63px 24px;
 color: #FFFFFF;
 background-color: rgba(33, 150, 243, 0.9);
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(100%);
+transform: translateY(100%);
 }
 .projects-item:hover .projects-overlay,
 .projects-item:focus .projects-overlay {
