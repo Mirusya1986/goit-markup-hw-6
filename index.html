@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="ru">
   <head>
     <link
@@ -473,6 +473,61 @@
   <use href="./images/symbol-defs.svg#icon-Vector"></use>
 </svg>
 </button>
+
+<form class="modal-form">
+  <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+<div class="modal-form-field">
+<label for="input-name" class="modal-form-label">Имя</label>
+<span class="input-wrapper">
+<input type="text" id="input-name" class="modal-form-input" placeholder="Иван Иванов" minlength="2">
+<svg class="icon-form" width="12" height="12">
+  <use href="./images/modal-defs.svg#icon-name"></use>
+</svg>
+</span>
+</div>
+
+<div class="modal-form-field">
+  <label for="input-name" class="modal-form-label">Телефон</label>
+  <span class="input-wrapper">
+  <input type="tel" id="usertel" class="modal-form-input" placeholder="+38(XXX)-XXX-XX-XX">
+  <svg class="icon-form" width="12" height="12">
+    <use href="./images/modal-defs.svg#icon-tel"></use>
+  </svg>
+  </span>
+  </div>
+
+  <div class="modal-form-field">
+    <label for="input-name" class="modal-form-label">Почта</label>
+    <span class="input-wrapper">
+    <input type="email" id="usermail" class="modal-form-input" placeholder="ivanov@mail.com">
+    <svg class="icon-form" width="12" height="12">
+      <use href="./images/modal-defs.svg#icon-email"></use>
+    </svg>
+    </span>
+    </div>
+
+    <div class="comment-wrapper">
+<label class="user-data-label">Комментарий</label>
+<textarea class="modal-comment" placeholder="Введите текст"></textarea>
+    </div>
+
+<div class="checkbox-policy">
+<input type="checkbox" class="checkbox visually-hidden" id="check" name="policy">
+<label class="check-label" for="check">
+<span class="checkbox-policy-wrapper">
+  <svg class="icon-checkbox" width="11" height="8">
+<use href="./images/modal-defs.svg#icon-yes">
+
+</use>
+</svg>
+Соглашаюсь с рассылкой и принимаю <a class="modal-policy-link" href="">Условия договора</a>
+</span>
+</label>
+</div>
+
+<button type="submit" class="modal-form-button">Отправить</button>
+
+</form>
 </div>
   </div>
   <script src="./js/modal.js"></script>
