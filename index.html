@@ -479,7 +479,7 @@
 <div class="modal-form-field">
 <label for="input-name" class="modal-form-label">Имя</label>
 <span class="input-wrapper">
-<input type="text" id="input-name" class="modal-form-input" placeholder="Иван Иванов" minlength="2">
+<input type="text" id="input-name" class="modal-form-input" minlength="2" required />
 <svg class="icon-form" width="12" height="12">
   <use href="./images/modal-defs.svg#icon-name"></use>
 </svg>
@@ -489,7 +489,7 @@
 <div class="modal-form-field">
   <label for="input-name" class="modal-form-label">Телефон</label>
   <span class="input-wrapper">
-  <input type="tel" id="usertel" class="modal-form-input" placeholder="+38(XXX)-XXX-XX-XX">
+  <input type="tel" id="usertel" class="modal-form-input" required />
   <svg class="icon-form" width="12" height="12">
     <use href="./images/modal-defs.svg#icon-tel"></use>
   </svg>
@@ -499,7 +499,7 @@
   <div class="modal-form-field">
     <label for="input-name" class="modal-form-label">Почта</label>
     <span class="input-wrapper">
-    <input type="email" id="usermail" class="modal-form-input" placeholder="ivanov@mail.com">
+    <input type="email" id="usermail" class="modal-form-input" required />
     <svg class="icon-form" width="12" height="12">
       <use href="./images/modal-defs.svg#icon-email"></use>
     </svg>
@@ -512,15 +512,10 @@
     </div>
 
 <div class="checkbox-policy">
-<input type="checkbox" class="checkbox visually-hidden" id="check" name="policy">
+<input type="checkbox" class="checkbox visually-hidden" id="check" name="policy" />
 <label class="check-label" for="check">
 <span class="checkbox-policy-wrapper">
-  <svg class="icon-checkbox" width="11" height="8">
-<use href="./images/modal-defs.svg#icon-yes">
-
-</use>
-</svg>
-Соглашаюсь с рассылкой и принимаю <a class="modal-policy-link" href="">Условия договора</a>
+Соглашаюсь с рассылкой и принимаю <a class="modal-policy-link" href="#">Условия договора</a>
 </span>
 </label>
 </div>

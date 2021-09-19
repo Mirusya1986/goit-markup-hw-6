@@ -593,10 +593,11 @@ border: none;
 border-radius: 4px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 cursor: pointer;
-transition-property: background-color;
-transition-duration: 250m;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-button:hover,
+.footer-button:focus {
+  background-color: #188ce8;
 }
 .email-form:hover,
 .email-form:focus {
@@ -770,7 +771,7 @@ opacity: 1;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0,1);
-  background-color: unset;
+  background-color: transparent;
   border-radius: 50%;
   right: 8px;
   top: 8px;
@@ -784,7 +785,7 @@ opacity: 1;
   margin-bottom: 12px;
   font-family: Roboto;
 font-style: normal;
-font-weight: bold;
+font-weight: 700;
 font-size: 20px;
 line-height: 1.15;
 text-align: center;
@@ -807,13 +808,14 @@ color: #757575;
 }
 .input-wrapper {
   position: relative;
-  display: flex;
+  display: block;
+  margin-top: 4px;
 }
-.input {
+.modal-form-input {
   padding-left: 42px;
-  width: 448px;
+  width: 100%;
 height: 40px;
-border: 1px solid #2196F3;
+border: 1px solid rgba(33, 33, 33, 0.2);;
 border-radius: 4px;
 font-family: Roboto;
 font-style: normal;
@@ -822,13 +824,13 @@ font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.01em;
 color: #757575;
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input::placeholder {
+.modal-form-input::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-.input:hover,
-.input:focus {
+.modal-form-input:hover,
+.modal-form-input:focus {
   border-color: var(--accent-color);
   outline: none;
 }
@@ -840,8 +842,8 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-be
   fill: var(--title-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input:hover .icon-form,
-.input:focus .icon-form {
+.modal-form-input:hover +.icon-form,
+.modal-form-input:focus +.icon-form {
   fill: var(--accent-color);
 }
 .comment-wrapper {
