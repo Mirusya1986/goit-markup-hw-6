@@ -770,7 +770,7 @@ opacity: 1;
   cursor: pointer;
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0,1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
   border-radius: 50%;
   right: 8px;
@@ -883,6 +883,9 @@ color: rgba(117, 117, 117, 0.5);
 }
 .checkbox-policy-wrapper {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 .visually-hidden {
   position: absolute;
@@ -902,7 +905,7 @@ color: rgba(117, 117, 117, 0.5);
   justify-content: center;
 }
 .icon-checkbox {
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   width: 15px;
@@ -910,8 +913,9 @@ color: rgba(117, 117, 117, 0.5);
   border: 2px solid #212121;
   cursor: pointer;
   border-radius: 2px;
-  margin-right: 8px;
+  margin-right: 5px;
   background-color: transparent;
+  /* transform: translate(-50%, -50%); */
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox:hover +.check-label .icon-checkbox,
