@@ -508,13 +508,21 @@
 
     <div class="comment-wrapper">
 <label class="user-data-label">Комментарий</label>
-<textarea class="modal-comment" placeholder="Введите текст"></textarea>
+<textarea class="modal-comment" name="about" placeholder="Введите текст"></textarea>
     </div>
 
 <div class="checkbox-policy">
-<input type="checkbox" class="checkbox visually-hidden" id="check" name="policy" />
+<input type="checkbox" class="checkbox visually-hidden" id="check" name="policy">
 <label class="check-label" for="check">
 <span class="checkbox-policy-wrapper">
+  <svg class="icon-checkbox" width="11" height="8">
+    <use href="./images/modal-defs.svg#icon-yes">
+      <!-- #shadow-root (closed)
+      < symbol id="icon-yes" viewBox="0 0 42 32">
+        <path fill="#fff" style="fill:var(--color1, #fff);stroke:var(--color1, #fff)" stroke="#fff" stroke-width=".64" d="m6.262 15.206-.221-.211-.221.208-3.085 2.925.243.234 11.408 10.88.221-.211L38.863 5.892l-.243-.23-3.043-2.902-.221.211-20.97 19.987-8.125-7.75z"/>
+      </symbol>
+      </use> -->
+</svg>
 Соглашаюсь с рассылкой и принимаю <a class="modal-policy-link" href="#">Условия договора</a>
 </span>
 </label>
